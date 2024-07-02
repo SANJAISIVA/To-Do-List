@@ -55,3 +55,24 @@ function addWork(){
     }
 
 }
+
+
+window.addEventListener('resize', updateButtonText);
+window.addEventListener('DOMContentLoaded', updateButtonText);
+
+function updateButtonText() {
+    var addButton = document.querySelector('.task-button');
+    var completeButtons = document.querySelectorAll('.task-button-complete');
+    var deleteButtons = document.querySelectorAll('.task-button-delete');
+    
+    if (window.innerWidth <= 600) {
+        if (addButton) addButton.textContent = '+';
+        completeButtons.forEach(button => button.textContent = 'C');
+        deleteButtons.forEach(button => button.textContent = 'D');
+    } else {
+        if (addButton) addButton.textContent = 'ADD';
+        completeButtons.forEach(button => button.textContent = 'COMPLETE');
+        deleteButtons.forEach(button => button.textContent = 'DELETE');
+    }
+}
+updateButtonText();

@@ -85,3 +85,24 @@ span {
 .completed-task {
     text-decoration: line-through 2px solid green;
 }
+
+@media (max-width: 600px) {
+    .task-button,
+    .task-button-complete,
+    .task-button-delete {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    input {
+        font-size: smaller;
+        max-width: 20ch;
+    }
+
+    span {
+        font-size: 20px;
+    }
+}
