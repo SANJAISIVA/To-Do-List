@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+    background-color: black;
+    color: blue;
+}
+
+h1 {
+    margin-top: 40px;
+    text-shadow: 2px 2px 2px red;
+}
+.outer-div {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    background-color:antiquewhite;
+    border: 1px solid blue;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: blue;
+    padding: 0.5rem;
+    margin: 20px;
+}
+
+.task-button,.task-button-complete, .task-button-delete{
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: larger;
+    padding: 0.5rem;
+}
+body .task-button:hover {
+    background-color: black;
+    border: 1px solid  white;
+    color: yellow;
+}
+
+body .task-button-complete:hover {
+    background-color: black;
+    border: 1px solid  white;
+    color: green;
+}
+
+body .task-button-delete:hover {
+    background-color: black;
+    border: 1px solid  white;
+    color: red;
+}
+.unorder-list{
+    width: 100%;
+    max-width: 80%;
+    font-size: 20px;
+}
+
+span {
+    font-size: 28px;
+    padding-top: 6px;
+    font-weight: 500;
+}
+.each-list {
+    /* border: 2px solid white; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+
+.completed-task {
+    text-decoration: line-through 2px solid green;
+}
